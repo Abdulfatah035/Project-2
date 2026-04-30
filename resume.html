@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body {
+  background: red;
+  color:black;
+}
+
+.card {
+  border: 1px solid var;
+  background: black
+}
+
+h1 {
+  color: black;
+}
+   
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Manrope", sans-serif;
+      color: black;
+      background: beige;
+      padding: 30 px 15px;
+    }
+        
+
+    h1,
+    h2 {
+      font-family: "Playfair Display", serif;
+    }
+
+    .page-shell {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 3rem;
+    }
+
+    .resume-card {
+      border: 1px solid ;
+      background: wheat;
+      backdrop-filter: blur(18px);
+      box-shadow: red;
+      border-radius: 24px;
+      padding: 1.5rem;
+      transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+    }
+
+    .resume-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.33);
+    }
+
+    .resume-hero {
+      max-width: 100%;
+      padding: 2rem;
+      border-radius: 28px;
+      margin-top: 2rem;
+    }
+
+    .eyebrow {
+      color: var;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.78rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.7rem;
+    }
+
+    p,
+    li {
+      color: white
+      line-height: 1.7;
+    }
+
+    .resume-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-title {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      color: var;
+    }
+
+    .contact-list,
+    .resume-list {
+      list-style: none;
+    }
+
+    .contact-list {
+      min-width: 260px;
+      padding: 1rem 1.1rem;
+      border: 1px solid ;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .contact-list li + li,
+    .resume-list li + li {
+      margin-top: 0.55rem;
+    }
+
+    .resume-summary {
+      max-width: 760px;
+      font-size: 1.04rem;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .resume-section-block + .resume-section-block {
+      margin-top: 1.2rem;
+    }
+
+    .resume-item-title {
+      color: var;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .resume-item-meta {
+      color: var;
+      margin-bottom: 0.85rem;
+    }
+
+    .wide-card {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 900px) {
+      .resume-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .resume-heading {
+        flex-direction: column;
+      }
+
+      .wide-card {
+        grid-column: span 1;
+      }
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        line-height: 1.08;
+      }
+    }
+    </style>
+  
+</head>
+<body class="resume-page">
+  <main class="page-shell resume-layout">
+    <section class="resume-hero resume-card">
+      <div class="resume-heading">
+        <div>
+          <p class="eyebrow">Professional Resume</p>
+          <h1>Abdulfatah Ahmed</h1>
+          <p class="resume-title">Web Technologies Student | Front-End Development Focus</p>
+        </div>
+        <ul class="contact-list">
+          <li>Email: AbdulfatahAhmed@gmail.com</li>
+          <li>Phone: (123) 456-7890</li>
+          <li>Location: lawrenceville GA</li>
+        </ul>
+      </div>
+      <p class="resume-summary">
+        Motivated and detail-oriented student with experience building
+        responsive web pages using HTML and CSS. Interested in front-end
+        development, user-centered design, and creating clean interfaces that
+        combine strong structure with engaging visual presentation.
+      </p>
+    </section>
+
+    <section class="resume-grid">
+      <article class="resume-card">
+        <h2>Technical Skills</h2>
+        <ul class="resume-list">
+          <li>HTML5 semantic layout and accessibility basics</li>
+          <li>CSS3 styling, typography, spacing, and color systems</li>
+          <li>Flexbox and CSS Grid for responsive page design</li>
+          <li>Transitions, transforms, and hover-based interactions</li>
+          <li>Multi-page navigation and consistent UI styling</li>
+        </ul>
+      </article>
+
+      <article class="resume-card">
+        <h2>Core Strengths</h2>
+        <ul class="resume-list">
+          <li>Strong visual consistency across multiple pages</li>
+          <li>Ability to follow project instructions carefully</li>
+          <li>Willingness to revise and improve based on feedback</li>
+          <li>Organized page structure and readable code formatting</li>
+          <li>Growing confidence with front-end problem solving</li>
+        </ul>
+      </article>
+
+      <article class="resume-card wide-card">
+        <h2>Education</h2>
+        <div class="resume-section-block">
+          <p class="resume-item-title">College Coursework in Web Technologies</p>
+          <p class="resume-item-meta">Current Student</p>
+          <p>
+            Studying modern web development concepts including semantic page
+            structure, responsive layouts, interface design, and front-end
+            styling techniques using HTML and CSS.
+          </p>
+        </div>
+      </article>
+
+      <article class="resume-card wide-card">
+        <h2>Relevant Projects</h2>
+        <div class="resume-section-block">
+          <p class="resume-item-title"> Multi-Page Portal</p>
+          <p class="resume-item-meta">Academic Web Project</p>
+          <ul class="resume-list">
+            <li>Designed a three-page website with a centered landing page, branded storefront, and resume section.</li>
+            <li>Used Flexbox for alignment, CSS Grid for product layout, and sticky navigation for usability.</li>
+            <li>Applied hover animations, transitions, and a consistent visual identity across all pages.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="resume-card wide-card">
+        <h2>Objective</h2>
+        <p>
+          Seeking opportunities to continue improving front-end development
+          skills through academic projects, portfolio work, and hands-on
+          practice with modern HTML and CSS techniques.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
 
